@@ -20,4 +20,3 @@ after_success:
  - docker push nikolamir/multi-nginx
  - docker push nikolamir/multi-server
  - docker push nikolamir/multi-worker
- 
