@@ -13,9 +13,7 @@ after_success:
  - docker build -t nikolamir/multi-nginx ./nginx
  - docker build -t nikolamir/multi-server ./server
  - docker build -t nikolamir/multi-worker ./worker
- # Log in to the docker CLI
- # echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
- # Take those images and push them to docker hub
+ echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
  - docker push nikolamir/multi-client
  - docker push nikolamir/multi-nginx
  - docker push nikolamir/multi-server
